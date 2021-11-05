@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 const Counter = () => {
 const [count, setCount] = useState(0)
@@ -10,6 +10,10 @@ const countUp = () => {
 const countDown = () => {
     setCount(prevState => prevState - 1)
 }
+
+useEffect(() => {
+    console.log("現在のカウント数:", count);
+}, [count])
 
 return (
     <>
