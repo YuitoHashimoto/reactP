@@ -1,6 +1,6 @@
 import './App.css';
 import React from 'react';
-import {Article,TextInput} from './components/index'
+import {Article, TextInput, Counter, ToggleBtn} from './components/index'
 
 function App() {
   return (
@@ -14,6 +14,16 @@ function App() {
         content = {"onChange"}
       />
       <TextInput/>
+      <Article
+        title = {"state応用編"}
+        content = {"counterつくる"}
+      />
+      <Counter />
+      <Article
+        title = {"state応用編"}
+        content = {"切替ボタンつくる"}
+      />
+      <ToggleBtn />
     </>
   );
 }
